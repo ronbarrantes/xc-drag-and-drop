@@ -47,7 +47,7 @@ export const Board = () => {
 
   return (
     <div className="flex w-full border-2 border-emerald-300 rounded-md p-5 h-full gap-2">
-      <div className="flex flex-col w-1/2 gap-4">
+      <div className="flex flex-col w-1/2 gap-4 items-center">
         <h2 className="text-center">Servers</h2>
         <ul className="flex flex-wrap gap-2 h-full">
           {servers.map((node, index) => (
