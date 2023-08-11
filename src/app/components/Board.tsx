@@ -63,7 +63,7 @@ export const Board = () => {
               <DroppableZone
                 onDrop={(itemId) => console.log(itemId)}
                 serverName={node}
-                className="border border-blue-500 w-20 h-20 rounded-lg justify-center items-center flex"
+                className="border border-blue-500 w-20 h-20 bg-black rounded-lg justify-center items-center flex"
               />
             </li>
           ))}
@@ -78,7 +78,7 @@ export const Board = () => {
                 setBeingDragged(node)
               }}
               draggable="true"
-              className="border text-3xl border-yellow-400 w-20 h-20 rounded-full justify-center items-center flex"
+              className="border text-3xl border-yellow-400 w-20 h-20 bg-black rounded-full justify-center items-center flex"
               key={`node-${index}`}
             >
               {node}
