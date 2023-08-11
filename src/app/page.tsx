@@ -1,20 +1,19 @@
 import Image from 'next/image'
 import { Board } from './components/Board'
 
-/// Drag and drop
-
-// 2 screens
-
-// objects nodes that can be dragged and dropped onto servers on the other side
-
-// array of nodes
-
-// an array of servers
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Board />
-    </main>
+    <div className="flex flex-col w-screen h-screen p-5 gap-5">
+      <header className="text-slate-300 flex flex-col text-sm justify-between">
+        <h1 className="text-2xl italic text-emerald-200 mb-3">
+          Drag and Drop challenge
+        </h1>
+        <p>Drag nodes onto the server</p>
+        <p>the server will detect which server the node was dragged into</p>
+      </header>
+      <main className="flex flex-col items-center justify-between">
+        <Board />
+      </main>
+    </div>
   )
 }
